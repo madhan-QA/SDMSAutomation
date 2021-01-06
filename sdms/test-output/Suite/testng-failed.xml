@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.systech.tradewinds.sdms.Test.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="login"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.systech.tradewinds.sdms.Test.LoginTest -->
+      <class name="com.systech.tradewinds.sdms.Test.ChargesMaserTest">
+        <methods>
+          <include name="insertChargesMaster"/>
+        </methods>
+      </class> <!-- com.systech.tradewinds.sdms.Test.ChargesMaserTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
