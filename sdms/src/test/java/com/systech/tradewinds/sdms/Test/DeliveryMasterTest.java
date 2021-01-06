@@ -16,7 +16,7 @@ public class DeliveryMasterTest extends BasePage {
 	DeliverythroughMaster Delivery;
 
 	@Test(groups = { "DeliveryMaster" }, dependsOnGroups = { "login" }, dataProvider = "DeliveryData")
-	public void insertDeliveryMaster(String throughType, String Name, String address, String remarks, String Service) {
+	public void insertDeliveryMaster(String throughType, String Name, String address,String GST ,String remarks, String Service) {
 		DeliverythroughMaster Delivery = new DeliverythroughMaster();
 		try {
 			impWait(1000);
@@ -28,6 +28,7 @@ public class DeliveryMasterTest extends BasePage {
 
 			txtData(Delivery.getaddress(), address);
 			// txtData(Delivery.getRemarks(), remarks);
+			txtData(Delivery.getGST(), GST);
 			switch (Service) {
 			case "road":
 				chkBox(Delivery.getroad());

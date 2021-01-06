@@ -25,6 +25,8 @@ public class DeliverythroughMaster extends BasePage {
 	private WebElement throughType;
 	@FindBy(xpath="//textarea[@id='chgtype:tabviewid:addresssid']")
 	private WebElement address;
+	@FindBy(xpath="//id[@id='chgtype:tabviewid:gstid']")
+	private WebElement GST;
 
 	
 	// service type
@@ -74,7 +76,10 @@ public class DeliverythroughMaster extends BasePage {
 
 	public WebElement getName() {
 		return Name;
+	}public WebElement getGST() {
+		return GST;
 	}
+
 
 	public WebElement getthroughType() {
 		return throughType;
