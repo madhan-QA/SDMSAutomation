@@ -12,5 +12,5 @@ public class TestData extends BasePage {
 					" JOIN tradewinds_jc2506.designation_master AS d ON a.designation_master_id = d.id \r\n" + 
 					" JOIN tradewinds_jc2506.division_master AS e ON a.division = e.id");
 			
-			Object[][] empData=	writeExcel("C:\\Users\\Systech\\Desktop\\Data\\EmpData.xls", 0,"Sheet1", res);
+		//	Object[][] empData=	writeExcel("C:\\Users\\Systech\\Desktop\\Data\\EmpData.xls", 0,"Sheet1", res);
 		}}
