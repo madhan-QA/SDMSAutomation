@@ -21,8 +21,8 @@ private final static String pageUrl = "http://localhost:8081/SDMS/pages/masters/
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:customerNameId_input']")
 private WebElement customerSearch;
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab1Id']")
-private WebElement Tab1;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:GeneralinfoId']")
+private WebElement Generalinfo;
 @FindBy(xpath = "//input[@id='chgtype:tabviewid:customerId']")
 private WebElement cusName;
 @FindBy(xpath = "//input[@id='chgtype:tabviewid:codeId']")
@@ -98,8 +98,8 @@ private WebElement t1Next;
 
 private WebElement t1Reset;
 
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab2Id']")
-private WebElement Tab2;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:BranchinfoId']")
+private WebElement Branchinfo;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:contactPersonId']")
 private WebElement CntPsn1;
@@ -168,75 +168,11 @@ private WebElement  BrchFax0;
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:table:0:emailId']")
 private WebElement BrchEmail0;
 
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:locationId']")
-private WebElement BrchLocation1;
 
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:addressId']")
-private WebElement Brchaddress1;
 
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:statenameId_input']")
-private WebElement BrchState1;
-@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:statenameId_panel']"))
-private List<WebElement> BrchStaeSugg1;
 
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:custSuggest_input']")
-private WebElement BrchCity1;
-@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:custSuggest_panel']"))
-
-private List<WebElement> BrchCitySugg1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:pincodeId']")
-private WebElement BrchPincode1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:contactPersonId']")
-private WebElement  BrchCntPrsn1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:mobileNoId']")
-private WebElement BrchMobile1;
-
-@FindBy(xpath = "//*[@id='id='chgtype:tabviewid:table:1:PhoneId']")
-private WebElement BrchPhone1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:faxId']")
-private WebElement  BrchFax1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:emailId']")
-private WebElement BrchEmail1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:locationId']")
-private WebElement BrchLocation2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:addressId']")
-private WebElement Brchaddress2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:statenameId_input']")
-private WebElement BrchState2;
-@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:statenameId_panel']"))
-private List<WebElement> BrchStaeSugg2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:custSuggest_input']")
-private WebElement BrchCity2;
-@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:custSuggest_panel']"))
-
-private List<WebElement> BrchCitySugg2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:pincodeId']")
-private WebElement BrchPincode2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:contactPersonId']")
-private WebElement  BrchCntPrsn2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:mobileNoId']")
-private WebElement BrchMobile2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:PhoneId']")
-private WebElement BrchPhone2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:faxId']")
-private WebElement  BrchFax2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:2:emailId']")
-private WebElement BrchEmail2;
+@FindBy(xpath = "//*[@id='chgtype:tabviewid:table:1:gstinbranchId']")
+private WebElement  BrchGST0;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt148']")
 private WebElement t2Next;
@@ -247,20 +183,20 @@ private WebElement t2Prev;
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt149']")
 private WebElement t2Reset;
 
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab3Id']")
-private WebElement Tab3;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:ProfileinfoId']")
+private WebElement Profileinfo;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt161']")
 private WebElement t3Next;
 
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:tab3CommandBackId']")
+@FindBy(xpath = "//*[@id='chgtype:tabviewid:ProfileinfoCommandBackId']")
 private WebElement t3Prev;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt162']")
 private WebElement t3Reset;
 
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab4Id']")
-private WebElement Tab4;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:ViewInfoId']")
+private WebElement ViewInfo;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt290']")
 private WebElement t4Next;
@@ -268,8 +204,8 @@ private WebElement t4Next;
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt290']")
 private WebElement t4Prev;
 
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab5Id']")
-private WebElement Tab5;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:CustomerInfoId']")
+private WebElement CustomerInfo;
 
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:0:productCodeId']")
@@ -298,56 +234,6 @@ private WebElement  CustRate0;
 private WebElement  CustDelete0;
 
 
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:1:productCodeId']")
-private WebElement CustPartno1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:1:itemSuggest_input']")
-private WebElement  CusItem1;
-
-@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:1:itemSuggest_panel']"))
-private List<WebElement> CustItemSugg1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:1:partSuggest_input']")
-private WebElement CustMakePartno1;
-@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:1:makeSuggest_panel']"))
-private List<WebElement> CustMakepartSugg1;
-
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:1:makeSuggest_input']")
-private WebElement CustMake1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:1:rateTableId_input']")
-private WebElement  CustRate1;
-
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:1:deletelink']")
-private WebElement  CustDelete1;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:2:productCodeId']")
-private WebElement CustPartno2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:2:itemSuggest_input']")
-private WebElement  CusItem2;
-
-@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:2:itemSuggest_panel']"))
-private List<WebElement> CustItemSugg2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:2:partSuggest_input']")
-private WebElement CustMakePartno2;
-@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:2:makeSuggest_panel']"))
-private List<WebElement> CustMakepartSugg2;
-
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:2:makeSuggest_input']")
-private WebElement CustMake2;
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:2:rateTableId_input']")
-private WebElement  CustRate2;
-
-
-@FindBy(xpath = "//*[@id='chgtype:tabviewid:itemTable:2:deletelink']")
-private WebElement  CustDelete2;
-
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt323']")
 private WebElement t5Next;
 
@@ -357,8 +243,8 @@ private WebElement t5Prev;
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt324']")
 private WebElement t5Reset;
 
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab6Id']")
-private WebElement Tab6;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:CustwarehouseInfoId']")
+private WebElement CustwarehouseInfo;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:customerWarehouseTable:0:deletelink']")
 private WebElement CusWardelete0;
@@ -385,8 +271,8 @@ private WebElement t6Prev;
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt355']")
 private WebElement t6Reset;
 
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab7Id']")
-private WebElement Tab7;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:SalesmanInfoId']")
+private WebElement SalesmanInfo;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:customerAgentTable:0:branchNameAgentId_input']")
 private WebElement CustAgentBrnch0;
@@ -418,8 +304,8 @@ private WebElement t7Prev;
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt380']")
 private WebElement t7Reset;
 
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab8Id']")
-private WebElement Tab8;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:OpeningsInfoId']")
+private WebElement OpeningsInfo;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:billWiseId_input']")
 private WebElement TrackBill;
@@ -454,8 +340,8 @@ private WebElement t8Next;
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt401']")
 private WebElement t8Prev;
 
-@FindBy(xpath = "//a[@href='#chgtype:tabviewid:tab9Id']")
-private WebElement Tab9;
+@FindBy(xpath = "//a[@href='#chgtype:tabviewid:AttchmentInfoId']")
+private WebElement AttchmentInfo;
 
 @FindBy(xpath = "////*[@id='chgtype:tabviewid:objectUploadnew_input']")
 private WebElement CustDoc;
@@ -470,6 +356,486 @@ private WebElement Submit;
 
 @FindBy(xpath = "//*[@id='chgtype:tabviewid:j_idt408']")
 private WebElement t9Prev;
+
+public static String getPageurl() {
+	return pageUrl;
+}
+
+public WebElement getCustomerSearch() {
+	return customerSearch;
+}
+
+public WebElement getGeneralinfo() {
+	return Generalinfo;
+}
+
+public WebElement getCusName() {
+	return cusName;
+}
+
+public WebElement getCusCode() {
+	return cusCode;
+}
+
+public WebElement getPrintName() {
+	return printName;
+}
+
+public WebElement getCompany() {
+	return company;
+}
+
+public WebElement getCusAlias() {
+	return cusAlias;
+}
+
+public WebElement getGstClass() {
+	return gstClass;
+}
+
+public WebElement getUnderCustomer() {
+	return underCustomer;
+}
+
+public WebElement getCusPhone() {
+	return cusPhone;
+}
+
+public WebElement getCusGroup() {
+	return cusGroup;
+}
+
+public WebElement getAddress1() {
+	return address1;
+}
+
+public WebElement getAddress2() {
+	return address2;
+}
+
+public WebElement getFax() {
+	return fax;
+}
+
+public WebElement getPAN() {
+	return PAN;
+}
+
+public WebElement getWebsite() {
+	return website;
+}
+
+public WebElement getGSTIN() {
+	return GSTIN;
+}
+
+public WebElement getT1OB() {
+	return t1OB;
+}
+
+public WebElement getPinCode() {
+	return pinCode;
+}
+
+public WebElement getContinent() {
+	return continent;
+}
+
+public WebElement getCountry() {
+	return country;
+}
+
+public WebElement getState() {
+	return state;
+}
+
+public WebElement getCity() {
+	return city;
+}
+
+public WebElement getRemarks() {
+	return remarks;
+}
+
+public WebElement getT1PayTerm() {
+	return t1PayTerm;
+}
+
+public WebElement getCurrency() {
+	return currency;
+}
+
+public WebElement getCreditValue() {
+	return creditValue;
+}
+
+public WebElement getCreditDays() {
+	return creditDays;
+}
+
+public WebElement getT1Next() {
+	return t1Next;
+}
+
+public WebElement getT1Reset() {
+	return t1Reset;
+}
+
+public WebElement getBranchinfo() {
+	return Branchinfo;
+}
+
+public WebElement getCntPsn1() {
+	return CntPsn1;
+}
+
+public WebElement getCpDes1() {
+	return CpDes1;
+}
+
+public WebElement getCpMob1() {
+	return CpMob1;
+}
+
+public WebElement getCpMail1() {
+	return CpMail1;
+}
+
+public WebElement getCntPsn2() {
+	return CntPsn2;
+}
+
+public WebElement getCpDes2() {
+	return CpDes2;
+}
+
+public WebElement getCpMob2() {
+	return CpMob2;
+}
+
+public WebElement getCpMail2() {
+	return CpMail2;
+}
+
+public WebElement getCntPsn3() {
+	return CntPsn3;
+}
+
+public WebElement getCpDes3() {
+	return CpDes3;
+}
+
+public WebElement getCpMob3() {
+	return CpMob3;
+}
+
+public WebElement getCpMail3() {
+	return CpMail3;
+}
+
+public WebElement getBrchLocation0() {
+	return BrchLocation0;
+}
+
+public WebElement getBrchaddress0() {
+	return Brchaddress0;
+}
+
+public WebElement getBrchState0() {
+	return BrchState0;
+}
+
+public List<WebElement> getBrchStaeSugg0() {
+	return BrchStaeSugg0;
+}
+
+public WebElement getBrchCity0() {
+	return BrchCity0;
+}
+
+public List<WebElement> getBrchCitySugg0() {
+	return BrchCitySugg0;
+}
+
+public WebElement getBrchPincode0() {
+	return BrchPincode0;
+}
+
+public WebElement getBrchCntPrsn0() {
+	return BrchCntPrsn0;
+}
+
+public WebElement getBrchMobile0() {
+	return BrchMobile0;
+}
+
+public WebElement getBrchPhone0() {
+	return BrchPhone0;
+}
+
+public WebElement getBrchFax0() {
+	return BrchFax0;
+}
+
+public WebElement getBrchEmail0() {
+	return BrchEmail0;
+}
+
+public WebElement getBrchGST0() {
+	return BrchGST0;
+}
+
+public WebElement getT2Next() {
+	return t2Next;
+}
+
+public WebElement getT2Prev() {
+	return t2Prev;
+}
+
+public WebElement getT2Reset() {
+	return t2Reset;
+}
+
+public WebElement getProfileinfo() {
+	return Profileinfo;
+}
+
+public WebElement getT3Next() {
+	return t3Next;
+}
+
+public WebElement getT3Prev() {
+	return t3Prev;
+}
+
+public WebElement getT3Reset() {
+	return t3Reset;
+}
+
+public WebElement getViewInfo() {
+	return ViewInfo;
+}
+
+public WebElement getT4Next() {
+	return t4Next;
+}
+
+public WebElement getT4Prev() {
+	return t4Prev;
+}
+
+public WebElement getCustomerInfo() {
+	return CustomerInfo;
+}
+
+public WebElement getCustPartno0() {
+	return CustPartno0;
+}
+
+public WebElement getCusItem0() {
+	return CusItem0;
+}
+
+public List<WebElement> getCustItemSugg0() {
+	return CustItemSugg0;
+}
+
+public WebElement getCustMakePartno0() {
+	return CustMakePartno0;
+}
+
+public List<WebElement> getCustMakepartSugg0() {
+	return CustMakepartSugg0;
+}
+
+public WebElement getCustMake0() {
+	return CustMake0;
+}
+
+public WebElement getCustRate0() {
+	return CustRate0;
+}
+
+public WebElement getCustDelete0() {
+	return CustDelete0;
+}
+
+public WebElement getT5Next() {
+	return t5Next;
+}
+
+public WebElement getT5Prev() {
+	return t5Prev;
+}
+
+public WebElement getT5Reset() {
+	return t5Reset;
+}
+
+public WebElement getCustwarehouseInfo() {
+	return CustwarehouseInfo;
+}
+
+public WebElement getCusWardelete0() {
+	return CusWardelete0;
+}
+
+public WebElement getCusWarBrch0() {
+	return CusWarBrch0;
+}
+
+public WebElement getCustWarCode() {
+	return CustWarCode;
+}
+
+public WebElement getCustWarName() {
+	return CustWarName;
+}
+
+public WebElement getCustWarRemark() {
+	return CustWarRemark;
+}
+
+public WebElement getT6Next() {
+	return t6Next;
+}
+
+public WebElement getT6Prev() {
+	return t6Prev;
+}
+
+public WebElement getT6Reset() {
+	return t6Reset;
+}
+
+public WebElement getSalesmanInfo() {
+	return SalesmanInfo;
+}
+
+public WebElement getCustAgentBrnch0() {
+	return CustAgentBrnch0;
+}
+
+public List<WebElement> getCustAgentBrchSugg0() {
+	return CustAgentBrchSugg0;
+}
+
+public WebElement getCustAgentMake0() {
+	return CustAgentMake0;
+}
+
+public List<WebElement> getCustAgentMakeSugg0() {
+	return CustAgentMakeSugg0;
+}
+
+public WebElement getCustAgent0() {
+	return CustAgent0;
+}
+
+public List<WebElement> getCustAgentSugg0() {
+	return CustAgentSugg0;
+}
+
+public WebElement getCustAgentPayterm0() {
+	return CustAgentPayterm0;
+}
+
+public List<WebElement> getCustAgentPaytermSugg0() {
+	return CustAgentPaytermSugg0;
+}
+
+public WebElement getCustAgentIncentive0() {
+	return CustAgentIncentive0;
+}
+
+public WebElement getCusAgentdelete0() {
+	return CusAgentdelete0;
+}
+
+public WebElement getT7Next() {
+	return t7Next;
+}
+
+public WebElement getT7Prev() {
+	return t7Prev;
+}
+
+public WebElement getT7Reset() {
+	return t7Reset;
+}
+
+public WebElement getOpeningsInfo() {
+	return OpeningsInfo;
+}
+
+public WebElement getTrackBill() {
+	return TrackBill;
+}
+
+public WebElement getOpeningBalance() {
+	return openingBalance;
+}
+
+public WebElement getCustOpnInvoiceNo0() {
+	return CustOpnInvoiceNo0;
+}
+
+public WebElement getCustOpnInvoiceDate0() {
+	return CustOpnInvoiceDate0;
+}
+
+public List<WebElement> getCustOpnInvoiceDateSugg0() {
+	return CustOpnInvoiceDateSugg0;
+}
+
+public WebElement getCustBillValue0() {
+	return CustBillValue0;
+}
+
+public WebElement getCustOutStandValue0() {
+	return CustOutStandValue0;
+}
+
+public WebElement getCustDueDate0() {
+	return CustDueDate0;
+}
+
+public List<WebElement> getCustDueDateSugg0() {
+	return CustDueDateSugg0;
+}
+
+public WebElement getT8Reset() {
+	return t8Reset;
+}
+
+public WebElement getT8Next() {
+	return t8Next;
+}
+
+public WebElement getT8Prev() {
+	return t8Prev;
+}
+
+public WebElement getAttchmentInfo() {
+	return AttchmentInfo;
+}
+
+public WebElement getCustDoc() {
+	return CustDoc;
+}
+
+public WebElement getClrCustDoc() {
+	return clrCustDoc;
+}
+
+public WebElement getSubmit() {
+	return Submit;
+}
+
+public WebElement getT9Prev() {
+	return t9Prev;
+}
 
 
 
