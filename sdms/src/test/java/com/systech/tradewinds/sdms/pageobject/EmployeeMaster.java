@@ -19,8 +19,8 @@ public class EmployeeMaster extends BasePage {
 
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:employeeNameSugId_input']")
 	private WebElement empSearch;
-	@FindBy(xpath = "//*[@id='chgtype:tabviewid:tab1id']")
-	private WebElement Tab1;
+	@FindBy(xpath = "//*[@id='chgtype:tabviewid:EmpInfoid']")
+	private WebElement EmpInfo;
 	@FindBy(xpath = "//input[@id='chgtype:tabviewid:eid']")
 	private WebElement empId;
 	@FindBy(xpath = "//input[@id='chgtype:tabviewid:employeeNameId']")
@@ -99,12 +99,7 @@ public class EmployeeMaster extends BasePage {
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:division']/div[2]/ul/li[1]/div/div/span")
 	private WebElement Division1;
 
-	@FindBy(xpath = "//*[@id='chgtype:tabviewid:division']/div[2]/ul/li[2]/div/div/span")
-	private WebElement Division2;
-
-	@FindBy(xpath = "//*[@id='chgtype:tabviewid:division']/div[2]/ulss/li[3]/div/div")
-	private WebElement Division3;
-
+	
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:nextId']")
 	private WebElement t1Next;
 
@@ -113,7 +108,7 @@ public class EmployeeMaster extends BasePage {
 	private WebElement t1Reset;
 
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:Tab3id']")
-	private WebElement Tab2;
+	private WebElement Attchment;
 	
 	@FindAll(@FindBy(xpath = "//*[@id='chgtype:tabviewid:rd_input']"))
 	private	 List<WebElement> RelivingDate;
@@ -184,8 +179,8 @@ public class EmployeeMaster extends BasePage {
 
 
 
-	public WebElement getTab1() {
-		return Tab1;
+	public WebElement getEmpInfo() {
+		return EmpInfo;
 	}
 
 	public WebElement getempId() {
@@ -269,8 +264,8 @@ public class EmployeeMaster extends BasePage {
 	}
 
 
-	public WebElement getTab2() {
-		return Tab2;
+	public WebElement getAttchment() {
+		return Attchment;
 	}
 
 	public List<WebElement> getjoinningDate() {
@@ -301,13 +296,7 @@ public class EmployeeMaster extends BasePage {
 		return Division1;
 	}
 
-	public WebElement getDivision2() {
-		return Division2;
-	}
-
-	public WebElement getDivision3() {
-		return Division3;
-	}
+	
 
 	public WebElement gett2Next() {
 		return t2Next;
