@@ -24,7 +24,9 @@ public class BankMaster extends BasePage {
 		@FindBy(xpath = "//input[@id='chgtype:tabviewid:accountno']")
 	private WebElement accno;
 	@FindBy(xpath= "//input[@id='chgtype:tabviewid:bankname']")
-	private WebElement bankname;
+	private WebElement bankAlias;
+	@FindBy(xpath= "//input[@id='chgtype:tabviewid:bankNameId_input']")
+	private WebElement bankName;
 	@FindBy(xpath = "//input[@id='chgtype:tabviewid:bankbranch']")
 	private WebElement branch;
 	@FindBy(xpath = "//input[@id='chgtype:tabviewid:ifsccode']")
@@ -45,8 +47,12 @@ public class BankMaster extends BasePage {
 	public WebElement getAccno() {
 		return accno;
 	}
-	public WebElement getBankname() {
-		return bankname;
+	public WebElement getBankAlias() {
+		return bankAlias;
+	}
+	
+	public WebElement getBankName() {
+		return bankName;
 	}
 	public WebElement getBranch() {
 		return branch;
