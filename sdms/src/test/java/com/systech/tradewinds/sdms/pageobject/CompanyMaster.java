@@ -27,6 +27,8 @@ public class CompanyMaster extends  BasePage{
 	@FindBy(xpath="//*[@id=\\'chgtype:tabviewid:companyName']")
 	private WebElement CmpanyName;
 	
+	
+
 	@FindBy(xpath="//*[@id=\\'chgtype:tabviewid:address1']")
 	private WebElement address1;
 	@FindBy(xpath="//*[@id=\\'chgtype:tabviewid:address2']")
@@ -169,11 +171,11 @@ public class CompanyMaster extends  BasePage{
 	private WebElement b1Address2;
 	
 	
-	@FindBy(xpath="//*[@id='chgtype:tabviewid:table:0:staname_input']")
-	private WebElement bState1;
+	@FindAll(@FindBy(xpath="//*[@id='chgtype:tabviewid:table:0:staname_input']"))
+	private List<WebElement> bState1;
+	@FindAll(@FindBy(xpath="//*[@id=\\''chgtype:table:0:cityname_input']"))
+	private List<WebElement> bCity1 ;
 
-	@FindBy(xpath="//*[@id=\\'chgtype:table:0:cityname_input']")
-	private WebElement bCity1;
 	
 	@FindBy(xpath="//*[@id=\\'chgtype:table:0:j_idt105']")
 	private WebElement bPincode1;
@@ -284,7 +286,11 @@ public class CompanyMaster extends  BasePage{
 	public String getPageUrl() {
 		return pageUrl;
 	}
+	public WebElement getCmpanyName() {
+		return CmpanyName;
+	}
 
+	
 	public WebElement getDesignation() {
 		return Designation;
 	}
@@ -442,11 +448,11 @@ public class CompanyMaster extends  BasePage{
 		return b1Address2;
 	}
 
-	public WebElement getbState1() {
+	public List<WebElement> getbState1() {
 		return bState1;
 	}
 
-	public WebElement getbCity1() {
+	public List<WebElement> getbCity1() {
 		return bCity1;
 	}
 
