@@ -35,11 +35,15 @@ public class EmployeeMaster extends BasePage {
 	private WebElement address2;
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:state_input']")
 	private WebElement state;
+	@FindBy(xpath = "//*[@id='chgtype:tabviewid:state_label']")
+	private WebElement stateLabel;
 
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:city_input']")
 	private WebElement city;
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:state_filter']")
 	private WebElement statefilter;
+	@FindBy(xpath = "//*[@id='chgtype:tabviewid:city_label']")
+	private WebElement Citylabel;
 
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:city_filter']")
 	private WebElement cityfilter;
@@ -58,7 +62,7 @@ public class EmployeeMaster extends BasePage {
 	private WebElement dobYear;
 	@FindBy(xpath = "//div/select[@class='ui-datepicker-year']")
 	private WebElement dobMonth;
-	@FindBy(xpath = "//*[@id='chgtype:tabviewid:sex_input']")
+	@FindBy(xpath = "//select[@id='chgtype:tabviewid:sex_input']")
 	private WebElement Gender;
 
 	@FindBy(xpath = "//input[@id='chgtype:tabviewid:mobileNo']")
@@ -87,10 +91,10 @@ public class EmployeeMaster extends BasePage {
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:offmn']")
 	private WebElement mobileNo1;
 
-	@FindBy(xpath = "//*[@id='chgtype:tabviewid:cate_input']")
+	@FindBy(xpath = "//select[@id='chgtype:tabviewid:cate_input']")
 	private WebElement categroy;
 
-	@FindBy(xpath = "//*[@id='chgtype:empst_input']")
+	@FindBy(xpath = "//*[@id='chgtype:tabviewid:empst_input']")
 	private WebElement  empStatus;
 
 	@FindBy(xpath = "//*[@id='chgtype:empGroup_input']")
@@ -101,7 +105,7 @@ public class EmployeeMaster extends BasePage {
 
 	
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:nextId']")
-	private WebElement t1Next;
+	private WebElement next1;
 
 	@FindBy(xpath = "//*[@id='chgtype:tabviewid:resetId']")
 
@@ -173,10 +177,13 @@ public class EmployeeMaster extends BasePage {
 		return dobMonth;
 	}
 
+	public WebElement getempGrp() {
+		return empGrp;
+	}
+
 	public WebElement getdobYear() {
 		return dobYear;
 	}
-
 
 
 	public WebElement getEmpInfo() {
@@ -211,7 +218,12 @@ public class EmployeeMaster extends BasePage {
 		return DOB;
 	}
 
-	
+	public WebElement getstateLabel() {
+		return stateLabel;
+	}
+	public WebElement getcityLabel() {
+		return Citylabel;
+	}
 
 	public WebElement getCityfilter() {
 		return cityfilter;
@@ -228,10 +240,7 @@ public class EmployeeMaster extends BasePage {
 	}
 
 
-	public WebElement getempGrp() {
-		return getempGrp();
-	}
-
+	
 	public List<WebElement>  getRelivingDate() {
 		return RelivingDate;
 	}
@@ -252,8 +261,8 @@ public class EmployeeMaster extends BasePage {
 		return email;
 	}
 
-	public WebElement gett1Next() {
-		return t1Next;
+	public WebElement getnext1() {
+		return next1;
 	}
 
 	public WebElement gett1Reset() {

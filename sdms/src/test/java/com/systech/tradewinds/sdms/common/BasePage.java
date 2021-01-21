@@ -176,15 +176,15 @@ public class BasePage {
 	 * Get Browser Method
 	 */
 	public WebDriver invokeBrowser(String browser) {
-
+String project = System.getProperty("user.dir");
 		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\sdms\\src\\Browser\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", project+"\\src\\Chrome\\chromedriver.exe");
 			options = new ChromeOptions();
 			options.addArguments("--start-maximized");
 			options.setAcceptInsecureCerts(true);
 			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\sdms\\src\\Browser\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",project+ "\\src\\Browser\\geckodriver.exe");
 		}
 		return driver;
 	}
@@ -566,6 +566,11 @@ public class BasePage {
 		select.deselectByVisibleText(text);
 	}
 
+	public static void deSelectByIndex(WebElement e, int index) {
+		select = new Select(e);
+		select.deselectByIndex(index);
+	}
+
 	public static void multiSelect(WebElement e, int index) {
 		select = new Select(e);
 		select.selectByIndex(index);
@@ -631,6 +636,9 @@ public class BasePage {
 
 	public static void enter(WebElement e) {
 		e.sendKeys(Keys.RETURN);
+	}
+	public static void keyDown_Enter(WebElement e) {
+		e.sendKeys(Keys.ARROW_DOWN,Keys.RETURN);
 	}
 
 	public static void tab(WebElement e) {

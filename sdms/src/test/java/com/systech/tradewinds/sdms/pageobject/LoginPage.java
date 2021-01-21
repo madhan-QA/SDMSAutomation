@@ -17,7 +17,7 @@ public class LoginPage extends BasePage {
 
 	// Login page url.
 
-	private  String pageUrl = "localhost:8081/SDMS/pages/admin/login.xhtml";
+	private  String pageUrl = "http://localhost:8081/SDMS/pages/admin/login.xhtml";
 
 	//	This below elements belongs to Login Page and its Branch Page.
 
