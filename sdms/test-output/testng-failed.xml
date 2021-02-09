@@ -10,11 +10,11 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.systech.tradewinds.sdms.Test.LoginTest -->
-      <class name="com.systech.tradewinds.sdms.Test.ServiceMasterTest">
+      <class name="com.systech.tradewinds.sdms.Test.EmpolyeeMasterTest">
         <methods>
-          <include name="inserServiceItem"/>
+          <include name="insertEmployeeMaster"/>
         </methods>
-      </class> <!-- com.systech.tradewinds.sdms.Test.ServiceMasterTest -->
+      </class> <!-- com.systech.tradewinds.sdms.Test.EmpolyeeMasterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

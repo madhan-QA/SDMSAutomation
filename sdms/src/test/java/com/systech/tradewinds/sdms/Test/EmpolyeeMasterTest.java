@@ -39,14 +39,19 @@ public class EmpolyeeMasterTest extends BasePage {
 
 			sleep();
 			txtData(emp.getpinCode(),"638452");
-			/*clkElement(emp.getDOB());
-			eleSelectable(emp.getdobMonth(),1000);		
+			clkElement(emp.getDOB());
+
+			/*moveToEle(emp.getdobMonth());
 			selectBytext(emp.getdobMonth(),"April");
-			selectBytext(emp.getdobYear(),"1995");	
-			selectDay(emp.getdobDay(),"11");
-			 */
-			selectBytext(emp.getGender(),"Male");
+			moveToEle(emp.getdobYear());
 			sleep();
+			selectBytext(emp.getdobYear(),"1995");	
+
+
+			selectList(emp.getdobDay(),"11");
+
+			selectBytext(emp.getGender(),"Male");
+			sleep();*/
 			txtData(emp.getmobileNo(),"9500817492");
 			sleep();
 			txtData(emp.getphoneNo(),"8610492575");
@@ -62,13 +67,13 @@ public class EmpolyeeMasterTest extends BasePage {
 
 			txtData(emp.getemail1(), "smk@gmail.com");
 			txtData(emp.getmobileNo1(), "8610492575");
-			/*if(emp.getempStatus().isDisplayed()) {
+			if(emp.getempStatus().isDisplayed()) {
 				selectBytext(emp.getempStatus(), "Active"); }
-			
-			if(emp.getempGrp().isEnabled()) {
-			selectBytext(emp.getempGrp(),"test"); }
 
-			*/btnClick(emp.getnext1());
+			if(emp.getempGrp().isEnabled()) {
+				selectBytext(emp.getempGrp(),"test"); }
+
+			btnClick(emp.getnext1());
 
 			sleep();
 
@@ -81,13 +86,13 @@ public class EmpolyeeMasterTest extends BasePage {
 
 			btnClick(emp.gett2Next());
 			expWait(emp.getSubmit(), 5000);
-			if (emp.getSubmit().isEnabled()) {
+			if (emp.getSubmit().isEnabled())/* {
 				btnClick(emp.getSubmit());
-			}
+			}*/
 
-			if (emp.getYes().isEnabled()) {
-				btnClick(emp.getYes());
-			}
+				if (emp.getYes().isEnabled()) {
+					btnClick(emp.getYes());
+				}
 			if (emp.getok().isEnabled()) {
 				btnClick(emp.getok());
 

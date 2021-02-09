@@ -58,9 +58,9 @@ public class EmployeeMaster extends BasePage {
 
 	@FindAll(@FindBy(xpath = "//*[@class='ui-datepicker-calendar']"))
 	private List<WebElement>  dobDay;
-	@FindBy(xpath = "//div/select[@class='ui-datepicker-month']")
+	@FindBy(xpath = "//select[@class='ui-datepicker-month']")
 	private WebElement dobYear;
-	@FindBy(xpath = "//div/select[@class='ui-datepicker-year']")
+	@FindBy(xpath = "//select[@class='ui-datepicker-year']")
 	private WebElement dobMonth;
 	@FindBy(xpath = "//select[@id='chgtype:tabviewid:sex_input']")
 	private WebElement Gender;
