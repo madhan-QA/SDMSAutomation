@@ -91,7 +91,7 @@ public class BasePage {
 	public static TakesScreenshot takescreenshot;
 	public static WebElement element;
 	public static Point point;
-
+	static String project = System.getProperty("user.dir");
 	/**
 	 * Get Excel Method
 	 */
@@ -176,7 +176,7 @@ public class BasePage {
 	 * Get Browser Method
 	 */
 	public WebDriver invokeBrowser(String browser) {
-String project = System.getProperty("user.dir");
+
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", project+"\\src\\Chrome\\chromedriver.exe");
 			options = new ChromeOptions();
@@ -192,23 +192,23 @@ String project = System.getProperty("user.dir");
 	/**
 	 * Get Property Method
 	 */
-	public static void getProp(String location) throws IOException {
-		file = new File(location);
+	public static void getProp(String key) throws IOException {
+		file = new File(project+"\\config.properties");
 		fileInput = new FileInputStream(file);
 		prop = new Properties();
 		prop.load(fileInput);
-	}
+		prop.getProperty(key);	}
 
 	/**
 	 * Set Property Method
 	 */
-	public static void setProp(String location, String fName, String key, String value) throws IOException {
-		file = new File(location);
+	public static void setProp(String key, String value) throws IOException {
+		file = new File(project+"\\config.properties");
 		file.createNewFile();
 		fileOutput = new FileOutputStream(file);
 		prop = new Properties();
 		prop.setProperty(key, value);
-		prop.store(fileOutput, fName);
+		prop.store(fileOutput, project+"\\config.properties");
 	}
 
 	/**

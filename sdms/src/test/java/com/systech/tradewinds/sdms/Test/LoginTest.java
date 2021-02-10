@@ -6,14 +6,19 @@ import com.systech.tradewinds.sdms.common.BasePage;
 import com.systech.tradewinds.sdms.pageobject.LoginPage;
 
 import java.io.IOException;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 public class LoginTest extends BasePage{
 
 	LoginPage login ; 
 	
-
+    private static final Logger log = Logger.getLogger(LoginTest.class); 
 	@Test(groups= {"login"} )
 
 	public void login() throws InterruptedException, IOException {
@@ -27,9 +32,9 @@ public class LoginTest extends BasePage{
 		currntUrl();
 
 		enter(login.getSubmit());
+              log.info("logged in sucessfully");
 
-
-
+         
 
 	}
 
@@ -58,7 +63,7 @@ public class LoginTest extends BasePage{
 
 
 
-	@BeforeTest
+	@BeforeSuite
 	public void beforeTest() {
 
 		login = new LoginPage();
@@ -70,7 +75,7 @@ public class LoginTest extends BasePage{
 
 
 
-	@AfterTest
+	@AfterSuite
 	public void afterTest() {
 		btnClick(login.getempIcon());
 		btnClick(login.getLogout());

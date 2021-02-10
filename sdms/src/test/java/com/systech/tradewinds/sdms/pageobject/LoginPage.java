@@ -14,7 +14,7 @@ public class LoginPage extends BasePage {
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
-
+    
 	// Login page url.
 
 	private  String pageUrl = "http://localhost:8081/SDMS/pages/admin/login.xhtml";
