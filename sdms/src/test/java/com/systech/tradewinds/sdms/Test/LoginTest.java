@@ -32,7 +32,7 @@ public class LoginTest extends BasePage{
 		currntUrl();
 
 		enter(login.getSubmit());
-              log.info("logged in sucessfully");
+              log.info("logged in Log Message");
 
          
 
